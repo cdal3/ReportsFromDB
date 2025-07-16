@@ -1,0 +1,8 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: BatchData/BatchData.yaml
+- Name: SelectedBatch
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

@@ -1,0 +1,40 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: DataloggerVariablesSimulator
+  Type: NetLogic
+  Children:
+  - Name: iSin
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: iCos
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: iRamp
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: bRunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Noise
+    Type: BaseDataVariableType
+    DataType: Float
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}/100"
+      - Name: ns=2;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../iSin"
