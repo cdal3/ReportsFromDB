@@ -1,4 +1,5 @@
 Name: BatchData
+Id: g=7722832780e877d242735e9e7786218f
 Type: FolderType
 Children:
 - Name: BatchActive
@@ -6,383 +7,483 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
 - Name: BatchID
+  Id: g=022603640ab449495f87ff2462e06967
   Type: BaseDataVariableType
   DataType: String
   Value: "BATCHID"
   Children:
   - Name: StringFormatter1
+    Id: g=6b8f26f9010768eaff1b6744846f1e44
     Type: StringFormatter
     Children:
     - Name: Format
+      Id: g=81210dab929750a76ae49c174effed0b
       Type: BaseDataVariableType
       DataType: LocalizedText
       ReferenceType: HasParameter
       Value: {"LocaleId":"en-US","Text":"{0}{1}"}
     - Name: ns=2;Source0
+      Id: g=ece398430a4800b678db8e17c013e2c5
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=53b04bc38792666ec1eac022d368387a
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../BatchHeader"
     - Name: ns=2;Source1
+      Id: g=4f88a9b1513dc12cecfb087c06e05c2b
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=245cf3123273299fd719579c361f3840
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../BatchRunNumber"
 - Name: PressurePV
+  Id: g=dd2fb42d6cc6e3dd2ced47bb7682d53b
   Type: BaseDataVariableType
   DataType: Float
   Children:
   - Name: ExpressionEvaluator1
+    Id: g=730cc0c25908327db69dc5bab2208828
     Type: ExpressionEvaluator
     Children:
     - Name: Expression
+      Id: g=e4b14cfbdb405c0f6a0c0d96daaae6bf
       Type: BaseDataVariableType
       DataType: String
       ReferenceType: HasParameter
       Value: "{0}+{1}"
     - Name: ns=2;Source0
+      Id: g=4f2063a1ddbfd536a0f139740fbd13a5
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=ba2d5c78485fb429b3f3525668ed81c5
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../PressureSP"
     - Name: ns=2;Source1
+      Id: g=658cd035338626290def383cfd7f0fca
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=43f1122747b97e2f252733359fff98d7
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../../NetLogic/DataloggerVariablesSimulator/Noise"
 - Name: TemperaturePV
+  Id: g=ebb80cfd4a264443379ce14ba928944d
   Type: BaseDataVariableType
   DataType: Float
   Children:
   - Name: ExpressionEvaluator1
+    Id: g=3ffc33e32e55f5d0b48dfcb5e949ba16
     Type: ExpressionEvaluator
     Children:
     - Name: Expression
+      Id: g=cb5ce17aef4f8a2aa2fb4405cab3d844
       Type: BaseDataVariableType
       DataType: String
       ReferenceType: HasParameter
       Value: "{0}+{1}"
     - Name: ns=2;Source0
+      Id: g=6428d2a6c98704b420b73e4efb5a69b1
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=5f32ffd98445feb68df301df66c745ea
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../TemperatureSP"
     - Name: ns=2;Source1
+      Id: g=46cd31d3d292863438350ae32b574e07
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=35ad4e86aa1f0e6c165e79a22c092177
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../../NetLogic/DataloggerVariablesSimulator/Noise"
 - Name: HumidityPV
+  Id: g=21407e035e182776096ba50391e4039c
   Type: BaseDataVariableType
   DataType: Float
   Children:
   - Name: ExpressionEvaluator1
+    Id: g=2e9e0495bba4b4b4793b7b1b6f749375
     Type: ExpressionEvaluator
     Children:
     - Name: Expression
+      Id: g=949e9769c42c99995cd5739a5b583ea7
       Type: BaseDataVariableType
       DataType: String
       ReferenceType: HasParameter
       Value: "{0}+{1}"
     - Name: ns=2;Source0
+      Id: g=7fa3a26345d990e17d8449c9605d475f
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=5d82b98a5d2c510a60851694bd76dbf4
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../HumiditySP"
     - Name: ns=2;Source1
+      Id: g=72fca501f11a24e10cff5b7644e3a973
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
       Children:
       - Name: DynamicLink
+        Id: g=1df90754702901b91158e5beacfcb5ca
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../../NetLogic/DataloggerVariablesSimulator/Noise"
 - Name: PressureSP
+  Id: g=b8eb3afdfc914dbae442c872611b1297
   Type: BaseDataVariableType
   DataType: Float
   Value: 50.0
 - Name: TemperatureSP
+  Id: g=3f8ac3f1baa0820b0201d1cfe3422a23
   Type: BaseDataVariableType
   DataType: Float
   Value: 70.0
 - Name: HumiditySP
+  Id: g=688600ac4c7e5725e8435bdf49a3a417
   Type: BaseDataVariableType
   DataType: Float
   Value: 15.0
 - Name: BatchActiveTransitioned
+  Id: g=a1fe713ef07a2f1b77cb6a4cd4705de8
   Type: VariableTransitionEventDispatcher
   Children:
   - Name: Value
+    Id: g=16f58ba67562bda2083a72b3ff008a2a
     Type: BaseVariableType
     DataType: Double
     Value: 1.0
   - Name: Transition
+    Id: g=075f65356718cb8dbc4b9996ba06d502
     Type: BaseVariableType
     DataType: VariableTransition
   - Name: VariableNodePath
+    Id: g=67523182b9df4d91478fd1607e0b0960
     Type: BaseVariableType
     DataType: NodePath
     Value: "../BatchActive"
   - Name: VariableTransitionEventHandler1
+    Id: g=93ae351793d1c3ec51555ef34d003a6b
     Type: EventHandler
     Children:
     - Name: ListenEventType
+      Id: g=85372967a6d68c22ac8758d7301deb47
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
     - Name: MethodsToCall
+      Id: g=75f212c140f5ab352490e7eec2e2b3cd
       Type: BaseObjectType
       Children:
       - Name: MethodContainer1
+        Id: g=ee5a61a0fce1cd76dd317fd07dd5eb75
         Type: BaseObjectType
         Children:
         - Name: ns=2;ObjectPointer
+          Id: g=296453d1ca4f1327eb8829ba9b20ee5d
           Type: NodePointer
           DataType: NodeId
           Children:
           - Name: Kind
+            Id: g=99cc9df64de5e0fc6f1b02d567869ef3
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
+            Id: g=9b990e94b9c14849e1b6f836eedc8cbe
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../../../../../Commands/VariableCommands@NodeId"
             Children:
             - Name: Mode
+              Id: g=fedc2748062687d3b74d143432b4e814
               Type: BaseVariableType
               DataType: DynamicLinkMode
               Value: 2
         - Name: ns=2;Method
+          Id: g=6926d1c3b2d066e431dba554fa618cb1
           Type: BaseDataVariableType
           DataType: String
           Value: "Set"
         - Name: InputArguments
+          Id: g=5b66448c0f9f88029b84c37c6db5b472
           Type: BaseObjectType
           Children:
           - Name: VariableToModify
+            Id: g=ae6a19f9be4da9708ba2ce637035a7df
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
             Value: "/Objects/ReportsFromDB/Loggers/BatchDataLogger/SamplingMode"
           - Name: Value
+            Id: g=0c5ad1152e49260a357e2e9733456d5a
             Type: BaseDataVariableType
             DataType: SamplingModeEnum
             Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
             Value: 1
           - Name: ArrayIndex
+            Id: g=60a2715a71093c1fcd288d69a4e6fb49
             Type: BaseDataVariableType
             DataType: UInt32
             Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
             ValueRank: ScalarOrOneDimension
     - Name: EventArguments
+      Id: g=1d27ec9ecf188a2ab2bb39bbbc60414e
       Type: VariableTransitionEvent
       Children:
       - Name: VariableNodeId
+        Id: g=a63426ef5dd994c7231fa501e910eb1a
         Type: BaseVariableType
         DataType: NodeId
       - Name: NewValue
+        Id: g=10444b314c7de90d4bbdbcc04a7c1bbd
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: OldValue
+        Id: g=e1c778d1e46bf1b47a54d3209e7f1eca
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: EventId
+        Id: g=1f68cb7875fc8053a80e0d5d8438260b
         Type: PropertyType
         DataType: ByteString
       - Name: EventType
+        Id: g=5565c40406202b3d18deb63c977d2d20
         Type: PropertyType
         DataType: NodeId
       - Name: SourceNode
+        Id: g=2e432b6badab85d758b7a7502c903d41
         Type: PropertyType
         DataType: NodeId
       - Name: SourceName
+        Id: g=6d726f4c950d651c633efaaadcd4c455
         Type: PropertyType
         DataType: String
       - Name: Time
+        Id: g=b663b9d18d575baf301323557e5f1cb3
         Type: PropertyType
         DataType: UtcTime
       - Name: ReceiveTime
+        Id: g=1420f3baf7f0c440f0b8b8665f35d28d
         Type: PropertyType
         DataType: UtcTime
       - Name: Message
+        Id: g=eb6ffe955f04f987699bdf8059dfbf3b
         Type: PropertyType
         DataType: LocalizedText
       - Name: Severity
+        Id: g=d91bdc51dd1b39be77adab665fc01edb
         Type: PropertyType
         DataType: UInt16
 - Name: BatchActiveTransitioned1
+  Id: g=84a8c6c0b93c9942c6dc820bec19c224
   Type: VariableTransitionEventDispatcher
   Children:
   - Name: Value
+    Id: g=6146c5a84680729acad4266fd34bf72f
     Type: BaseVariableType
     DataType: Double
   - Name: Transition
+    Id: g=5db3a91e3a42536eefca75515d1ce94f
     Type: BaseVariableType
     DataType: VariableTransition
   - Name: VariableNodePath
+    Id: g=f887bfaaa84cec609d1645ddcde29dce
     Type: BaseVariableType
     DataType: NodePath
     Value: "../BatchActive"
   - Name: VariableTransitionEventHandler1
+    Id: g=cc1e4ffb4476deca3cd3bb0f0fca3898
     Type: EventHandler
     Children:
     - Name: ListenEventType
+      Id: g=ab30d7eec14a75b5c469ac183826ee5f
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
     - Name: MethodsToCall
+      Id: g=ba8e27513f0ce6b65888c5d039aaa5d8
       Type: BaseObjectType
       Children:
       - Name: MethodContainer2
+        Id: g=b18deaac694cd337ffa29cc23b7bad87
         Type: BaseObjectType
         Children:
         - Name: ns=2;ObjectPointer
+          Id: g=e3e1a32f6267a3b662d02cf39d4d672e
           Type: NodePointer
           DataType: NodeId
           Children:
           - Name: Kind
+            Id: g=7d529aebd8770f65668bfadfc9ae8791
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
+            Id: g=41fec3b1718fa914907b27b548fab998
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../../../../../Commands/VariableCommands@NodeId"
             Children:
             - Name: Mode
+              Id: g=bb4eb65cda921a77d77f6a7343cfb3e3
               Type: BaseVariableType
               DataType: DynamicLinkMode
               Value: 2
         - Name: ns=2;Method
+          Id: g=4323258052f804b16492b5cf674fa7ca
           Type: BaseDataVariableType
           DataType: String
           Value: "Increment"
         - Name: InputArguments
+          Id: g=ff0d880933f5841c3c44d79c7f56e8ba
           Type: BaseObjectType
           Children:
           - Name: VariableToModify
+            Id: g=3581ce4527b1653509ae55ee17c221ca
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":2,"TextId":"IncrementVariableToModifyDescription"}
             Value: "/Objects/ReportsFromDB/Model/BatchData/BatchRunNumber"
           - Name: Delta
+            Id: g=c1da35a7a1a11069c0e97d2b9ae60111
             Type: BaseDataVariableType
             DataType: Float
             Description: {"NamespaceIndex":2,"TextId":"IncrementDeltaDescription"}
             Value: 1.0
           - Name: ArrayIndex
+            Id: g=1fc1d6826d81ec4f62aa08e5f685017e
             Type: BaseDataVariableType
             DataType: UInt32
             Description: {"NamespaceIndex":2,"TextId":"IncrementArrayIndexDescription"}
             ValueRank: ScalarOrOneDimension
       - Name: MethodContainer1
+        Id: g=8363bbaea55c3eb3fb8fefb48c5cd355
         Type: BaseObjectType
         Children:
         - Name: ns=2;ObjectPointer
+          Id: g=9ffbff8a4d0964a31838932839f6f91c
           Type: NodePointer
           DataType: NodeId
           Children:
           - Name: Kind
+            Id: g=17f9c5ef5a2df739d583de967c2137e4
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: DynamicLink
+            Id: g=be623182797486576920f80485c0997c
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../../../../../Commands/VariableCommands@NodeId"
             Children:
             - Name: Mode
+              Id: g=91b214a9683b471f30b5b640d69b8667
               Type: BaseVariableType
               DataType: DynamicLinkMode
               Value: 2
         - Name: ns=2;Method
+          Id: g=22fc174792e2c9d4e3042d3266b9e884
           Type: BaseDataVariableType
           DataType: String
           Value: "Set"
         - Name: InputArguments
+          Id: g=0d00a5b8f488de9ca9cd8e0ba5277669
           Type: BaseObjectType
           Children:
           - Name: VariableToModify
+            Id: g=a33cdb41e20154c47ac548b49929197a
             Type: BaseDataVariableType
             DataType: VariablePointer
             Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
             Value: "/Objects/ReportsFromDB/Loggers/BatchDataLogger/SamplingMode"
           - Name: Value
+            Id: g=31f01e474d8e4459cf128874fb980a8d
             Type: BaseDataVariableType
             DataType: SamplingModeEnum
             Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
           - Name: ArrayIndex
+            Id: g=a5e8a3fec487c7523a948388504665e9
             Type: BaseDataVariableType
             DataType: UInt32
             Description: {"NamespaceIndex":2,"TextId":"SetArrayIndexDescription"}
             ValueRank: ScalarOrOneDimension
     - Name: EventArguments
+      Id: g=9d57719a534bea6938caae9e3d83e434
       Type: VariableTransitionEvent
       Children:
       - Name: VariableNodeId
+        Id: g=635cdd84f3464d889b122d73b6d74003
         Type: BaseVariableType
         DataType: NodeId
       - Name: NewValue
+        Id: g=903546e35a7d8667a5703dca5961ff8c
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: OldValue
+        Id: g=93688c9f9b8bc1b267ef58722276964f
         Type: BaseVariableType
         DataType: BaseDataType
       - Name: EventId
+        Id: g=9029a2215bae6f57a23bea9988c15895
         Type: PropertyType
         DataType: ByteString
       - Name: EventType
+        Id: g=c51b6a7bcee1bbe6096a4901ffc56421
         Type: PropertyType
         DataType: NodeId
       - Name: SourceNode
+        Id: g=bda500fbcc27f8cbe35b7f0e64cdc599
         Type: PropertyType
         DataType: NodeId
       - Name: SourceName
+        Id: g=b34c6ae44549b5c0b347ba2cfac18f05
         Type: PropertyType
         DataType: String
       - Name: Time
+        Id: g=7389fa413a0fa17acae3c354ed64162c
         Type: PropertyType
         DataType: UtcTime
       - Name: ReceiveTime
+        Id: g=2ebc848f547e2836800806961f16f9c9
         Type: PropertyType
         DataType: UtcTime
       - Name: Message
+        Id: g=53eb55838efd6b4f48094318b5a7e863
         Type: PropertyType
         DataType: LocalizedText
       - Name: Severity
+        Id: g=f2608beb7ead2eb7748f66336da58cd8
         Type: PropertyType
         DataType: UInt16
 - Name: BatchHeader
+  Id: g=af292b0e6dd9d150569d5c92a187957c
   Type: BaseDataVariableType
   DataType: String
   Value: "BATCH"

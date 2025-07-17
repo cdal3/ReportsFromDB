@@ -1,8 +1,24 @@
 Name: Model
+Id: g=4e6ebf1aceff658ba9bac5cced0322a9
 Type: ModelCategoryFolder
 Children:
 - File: BatchData/BatchData.yaml
 - Name: SelectedBatch
+  Id: g=dd46d234a336d32e861f38bd2661cf34
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
+- Name: LatestReportPath
+  Id: g=3565056c2037faf718ef61d1225d3ff8
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "ns=7;%PROJECTDIR%/BatchReport.pdf"
+- Name: LatestReportPathChanged
+  Id: g=fd0a8a758ddaf8ae68636cc824628a65
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Id: g=2dca8477aef8d1c12013f7801b0f506b
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../LatestReportPath"

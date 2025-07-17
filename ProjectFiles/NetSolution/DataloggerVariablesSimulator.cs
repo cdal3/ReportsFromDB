@@ -8,6 +8,7 @@ using FTOptix.SQLiteStore;
 using FTOptix.Store;
 using FTOptix.DataLogger;
 using FTOptix.Report;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class DataloggerVariablesSimulator : BaseNetLogic

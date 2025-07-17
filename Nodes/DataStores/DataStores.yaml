@@ -1,4 +1,5 @@
 Name: DataStores
+Id: g=c332b403833f46266e37029ef8499345
 Type: DataStoresCategoryFolder
 Children:
 - Name: BatchDataStore
@@ -6,9 +7,11 @@ Children:
   Type: SQLiteStore
   Children:
   - Name: Tables
+    Id: g=d4a9697e4e40e468b8eeaa38e00f2070
     Type: BaseObjectType
     Children:
     - Name: BatchDataLogger
+      Id: g=a6dde8c3556c2cfd0cf04a70732969f4
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -24,25 +27,32 @@ Children:
         Target: ns=17;i=20
         Direction: Forward
       - Name: Columns
+        Id: g=f2c49615034ea5ca3b19142761f65a04
         Type: BaseObjectType
         Children:
         - Name: Timestamp
+          Id: g=9d3d8c08d831bbc79706e51144384dc6
           Type: StoreColumn
           DataType: UtcTime
         - Name: LocalTimestamp
+          Id: g=869dad98b1f856056b93a8ff45bd718e
           Type: StoreColumn
           DataType: DateTime
         - Name: BatchID
+          Id: g=466f897e9edb21f795847a23877851fa
           Type: StoreColumn
           DataType: String
           Value: "0"
         - Name: Pressure
+          Id: g=ef1688c84cd5dde5111b9e94ef808db5
           Type: StoreColumn
           DataType: Float
         - Name: Temperature
+          Id: g=5adfe55af927c088f3d506a6abe8d62b
           Type: StoreColumn
           DataType: Float
         - Name: Humidity
+          Id: g=fb5b27ca14d213857797c63278cd0088
           Type: StoreColumn
           DataType: Float
   - Class: Reference
@@ -52,20 +62,24 @@ Children:
     Target: ns=21;i=33
     Direction: Forward
   - Name: MaxColumnNameLength
+    Id: g=ea037652cf5d7d0f9c5ade1f718ad438
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: MaxColumnCount
+    Id: g=1883aed43803661d5e7f11fb0610831f
     Type: BaseDataVariableType
     DataType: UInt32
     AccessLevel: Read
   - Name: DataTypeCompatibilityMap
+    Id: g=cdeb89514ca175b50a9289fa10b58ff5
     Type: BaseDataVariableType
     DataType: NodeId
     AccessLevel: Read
     ValueRank: OneOrMoreDimensions
     ArrayDimensions: [0,0]
   - Name: Status
+    Id: g=d2bcf511d55c97b1f0710704a3812056
     Type: PropertyType
     DataType: StoreStatus
     AccessLevel: Read
@@ -104,5 +118,6 @@ Children:
     Target: ns=17;i=59
     Direction: Forward
   - Name: InMemory
+    Id: g=9e93651a02531a98aff0ef7a83d1529c
     Type: BaseDataVariableType
     DataType: Boolean

@@ -1,51 +1,64 @@
 Name: ReportsFromDB
+Id: g=a2cdf8db6c9d04816940c93bcae5b2db
 Type: ProjectFolder
 Children:
 - Name: Localization
+  Id: g=4d13cb1c4e6c860c75ee9ed74ec070c7
   Type: PropertyGroup
   Children:
   - Name: Locales
+    Id: g=6d4bbf002a8c18f58863ccdc83a12a9a
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
   - Name: LocaleFallbackList
+    Id: g=4264037faa165ee4b302c5b2355386ba
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
 - Name: Authentication
+  Id: g=6f2e06ab1df2c5eeedbd81cb3ca41486
   Type: PropertyGroup
   Children:
   - Name: DefaultUserFolder
+    Id: g=02290bf989a6d8f2dfa23dd51754f8e9
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/ReportsFromDB/Security/Users"
     Children:
     - Name: Kind
+      Id: g=425623db7e4df5867ca3db1c711758eb
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
 - Name: PasswordPolicy
+  Id: g=c92dc797e9ef4464529560c4b0e24523
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
+    Id: g=e0f9eeab9b855cd56413d3c953a129a7
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: EnforcePasswordHistory
+    Id: g=9b623745c138a75b265931cd660028ba
     Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
+    Id: g=9539df01afb8e03601d142c5a31c1f34
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: MinimumPasswordLength
+    Id: g=c8540b98150b297eb0e1d97e5afe03bb
     Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
+  Id: g=4a091cac2b07771ea82588b1450085f7
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Model/Model.yaml

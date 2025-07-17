@@ -1,0 +1,36 @@
+Name: BatchReportObjects
+Id: g=0cae945d91f1765c8ee6af280e407235
+Type: FolderType
+Children:
+- Name: BatchReport
+  Id: g=fd9219ebb52a41013f51cc14cfc0b8e5
+  Type: ReportObject
+  DisplayName: {"LocaleId":"en-US","Text":"Batch Report"}
+  Children:
+  - Class: Reference
+    Target: g=6d5768da96a46088536c5ce362f15dfd
+    Direction: Forward
+- Name: PressureReport
+  Id: g=042227b385737c44674cc76802dca4e5
+  Type: ReportObject
+  DisplayName: {"LocaleId":"en-US","Text":"Pressure Report"}
+  Children:
+  - Class: Reference
+    Target: g=6d5768da96a46088536c5ce362f15dfd
+    Direction: Forward
+- Name: TemperatureReport
+  Id: g=d6afefd899281e93eb67034ef82d95b4
+  Type: ReportObject
+  DisplayName: {"LocaleId":"en-US","Text":"Temperature Report"}
+  Children:
+  - Class: Reference
+    Target: g=6d5768da96a46088536c5ce362f15dfd
+    Direction: Forward
+- Name: HumidityReport
+  Id: g=f7140b26a1efc65e4d6bdf37f67a3946
+  Type: ReportObject
+  DisplayName: {"LocaleId":"en-US","Text":"Humidity Report"}
+  Children:
+  - Class: Reference
+    Target: g=6d5768da96a46088536c5ce362f15dfd
+    Direction: Forward

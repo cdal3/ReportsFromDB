@@ -1,4 +1,5 @@
 Name: Loggers
+Id: g=dc4e92858a8c970d4af0d41ce7a6d980
 Type: LoggersCategoryFolder
 Children:
 - Name: BatchDataLogger
@@ -10,114 +11,141 @@ Children:
     Type: PropertyType
     DataType: SamplingModeEnum
   - Name: Store
+    Id: g=84234609aa09b43c8deb8f04538ee746
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/ReportsFromDB/DataStores/BatchDataStore"
     Children:
     - Name: Kind
+      Id: g=a1d6c32ead6e7a8dd323e63434ecfefc
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
+    Id: g=ad39ee72f65fcfbef64161ab62f40f94
     Type: BaseObjectType
     Children:
     - Name: BatchID
+      Id: g=3102a6becd990d9793d76966fd8304a7
       Type: VariableToLog
       DataType: String
       Children:
       - Name: LastValue
+        Id: g=613ea2136c117bcce68446b5cc8c53bc
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=0b28ee825271f8c7b0f4a63f51cf5666
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=1ca0d805e899898ce42fc6b54ae5c883
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=2213368e081af8564a7df507d327be9e
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/BatchData/BatchID"
         Children:
         - Name: Mode
+          Id: g=3e699a5b4e25174b26e87947e8ba2190
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: Pressure
+      Id: g=56b1b81bcb1d83a4491346b0165c6936
       Type: VariableToLog
       DataType: Float
       Children:
       - Name: LastValue
+        Id: g=caff4a76c01f86b90f301c8b67ebeaa6
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=c974cabd95a84da8563423b2c2c5dc98
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=65f4139d55b247553686491c6dd5ce70
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=c00a92b166090126d66e0361098be0b5
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/BatchData/PressurePV"
         Children:
         - Name: Mode
+          Id: g=c4fd877862dbe612933cb81e88cf06bc
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: Temperature
+      Id: g=b872b9d9a35e6d7bcc158222d0888c7f
       Type: VariableToLog
       DataType: Float
       Children:
       - Name: LastValue
+        Id: g=9e488791ae7967fd2acbc6b8dcede254
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=8fd89b3bf1e99a898c77f334a19ea4cf
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=129bc7c3623db76560c6fabcf4345e27
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=ec327ec74d677d114d771a6e14daf0e7
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/BatchData/TemperaturePV"
         Children:
         - Name: Mode
+          Id: g=5ab7b0caa0d5f4fe4af0d62531ff1339
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
     - Name: Humidity
+      Id: g=952571d80a019b4ab2451a6a530971b7
       Type: VariableToLog
       DataType: Float
       Children:
       - Name: LastValue
+        Id: g=8303779f8bb33e2aebb190e6f214cc9a
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
       - Name: Timestamp
+        Id: g=afb02627204095f8c34af091a3d5ff91
         Type: PropertyType
         DataType: UtcTime
         AccessLevel: Read
       - Name: LastOperationCode
+        Id: g=74d99d76e1755b3c13ce4920f5c7fc1b
         Type: PropertyType
         DataType: StatusCode
         AccessLevel: Read
       - Name: DynamicLink
+        Id: g=72fc03903c214f290c04ddc74a5e131c
         Type: DynamicLink
         DataType: NodePath
         Value: "../../../../Model/BatchData/HumidityPV"
         Children:
         - Name: Mode
+          Id: g=c9ad75f2794d5dce30374615d030a606
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
@@ -125,6 +153,7 @@ Children:
     Target: ns=15;i=21
     Direction: Forward
   - Name: LogLocalTime
+    Id: g=bf9e8d3447c7ee83c8e92dda959fdc39
     Type: PropertyType
     DataType: Boolean
     Value: true

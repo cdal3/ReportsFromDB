@@ -1,40 +1,51 @@
 Name: NetLogic
+Id: g=5e40c73645cc3590de136f086face75c
 Type: NetLogicCategoryFolder
 Children:
 - Name: DataloggerVariablesSimulator
+  Id: g=dab3538b301e9bbc3e750afbd91ff2d7
   Type: NetLogic
   Children:
   - Name: iSin
+    Id: g=d6db81e1068f555326abc67d364793db
     Type: BaseDataVariableType
     DataType: Int32
   - Name: iCos
+    Id: g=1cfb5e3835aec29792b089d984301711
     Type: BaseDataVariableType
     DataType: Int32
   - Name: iRamp
+    Id: g=e60b204326d21637e8b7d850858210b3
     Type: BaseDataVariableType
     DataType: Int32
   - Name: bRunSimulation
+    Id: g=193646b8b5d34219508aff68ead3fddf
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: Noise
+    Id: g=7bcbb3859f87a535078450d44039156e
     Type: BaseDataVariableType
     DataType: Float
     Children:
     - Name: ExpressionEvaluator1
+      Id: g=dc71e8528d25feac005647ca1be76dc9
       Type: ExpressionEvaluator
       Children:
       - Name: Expression
+        Id: g=bc0b89617c4923ce2137a9af2f51f1bb
         Type: BaseDataVariableType
         DataType: String
         ReferenceType: HasParameter
         Value: "{0}/100"
       - Name: ns=2;Source0
+        Id: g=f28bd62969cf262e9a605cb35da09267
         Type: BaseDataVariableType
         DataType: BaseDataType
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=8811f67f060a9e72abca996f67a9ff02
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../iSin"

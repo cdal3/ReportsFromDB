@@ -89,15 +89,23 @@ Project:
    Uri: 'urn:FTOptix:SQLiteStore:Net'
    Module: FTOptix.SQLiteStore.Net
    Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.2
+  24:
+   Uri: 'urn:FTOptix:OPCUAServer:Net'
+   Module: FTOptix.OPCUAServer.Net
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 1357
-  Objects: 323
-  ObjectTypes: 4
-  Variables: 1030
+  TotalNodeCount: 2129
+  Objects: 397
+  ObjectTypes: 5
+  Variables: 1721
   VariableTypes: 0
   DataTypes: 0
-  Methods: 0
-  References: 38
+  Methods: 6
+  References: 46
   ReferenceTypes: 0
   Files: 25
  Nodes:
