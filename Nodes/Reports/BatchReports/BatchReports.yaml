@@ -1668,7 +1668,6 @@ Children:
     Id: g=549b1cd1407a18c482a5f54c12a21201
     Type: BaseDataVariableType
     DataType: String
-    Value: "0"
   - Name: PressureMax
     Id: g=de200b87962235fbb025fa86e7ae9749
     Type: BaseDataVariableType

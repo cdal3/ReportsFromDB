@@ -121,3 +121,4 @@ Children:
     Id: g=9e93651a02531a98aff0ef7a83d1529c
     Type: BaseDataVariableType
     DataType: Boolean
+    Value: true

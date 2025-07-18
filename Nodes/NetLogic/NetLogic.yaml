@@ -49,3 +49,6 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../iSin"
+- Name: Initialization
+  Id: g=7400d78fcb576ddcceaa671be3660b0e
+  Type: NetLogic

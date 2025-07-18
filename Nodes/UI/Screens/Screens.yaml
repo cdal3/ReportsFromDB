@@ -854,7 +854,7 @@ Children:
             Id: g=01c7b4b511b896deb81b524a622ad674
             Type: DynamicLink
             DataType: NodePath
-            Value: "{Item}@BrowseName"
+            Value: "{Item}@DisplayName"
       - Name: HorizontalGap
         Id: g=481ae88d73067c54313f273458024bad
         Type: BaseDataVariableType
@@ -1083,46 +1083,6 @@ Children:
               Id: g=523ab60e82d4e40d670ab86b95c2b1a4
               Type: PropertyType
               DataType: UInt16
-      - Name: Label5
-        Id: g=b082c16b8314f5f3b13762278e818f49
-        Type: Label
-        Children:
-        - Name: Text
-          Id: g=e47c9419d5a9ddcc1a8d62c9b598e14b
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Children:
-          - Name: DynamicLink
-            Id: g=8b726a15c5b3fe2c9a1d5b847908b41b
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/ReportsFromDB/Reports/BatchReports/BatchReport/Status"
-        - Name: VerticalAlignment
-          Id: g=dbf1d6a6666f2bafe56718ec7829e3d8
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 2
-      - Name: Label4
-        Id: g=828a06634b9adc2b410fff29d83b2d8a
-        Type: Label
-        Children:
-        - Name: Text
-          Id: g=f7bbff24b038875d865a22d580d67402
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Children:
-          - Name: DynamicLink
-            Id: g=ac53a1148a1559ac2af1a3d35c1e354e
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/ReportsFromDB/Model/LatestReportPath"
-        - Name: VerticalAlignment
-          Id: g=7134583985467d6498ff636308fbd328
-          Type: BaseVariableType
-          DataType: VerticalAlignment
-          ModellingRule: Optional
-          Value: 2
     - Name: LeftMargin
       Id: g=b54a596e284e93a23bf9d956edf6af3f
       Type: BaseVariableType
